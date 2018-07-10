@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './SocialCard.css';
 
 class SocialCard extends Component {
     constructor(props) {
@@ -25,11 +26,11 @@ class SocialCard extends Component {
         return (
             <div className='SocialCard-container'>
             <section className='SocialCard-summary'>
-                <span>
-                    Likes: {this.state.likes}
+                <span className='like circle'>
+                     {this.state.likes}
                 </span>
-                <span>
-                    Dislikes: {this.state.dislikes}
+                <span className='dislike circle'>
+                     {this.state.dislikes}
                 </span>
             </section>
                 <section className='SocialCard-image'>
