@@ -1,12 +1,14 @@
 /* esLint-disable */
 
 import React, { Component } from 'react';
-
+import SocialCard from './SocialCard';
 
 class App extends Component {
   render() {
     return (
-      <div>Yayyyy it works</div>
+      <div>
+        <SocialCard/>
+      </div>
     );
   }
 }
