@@ -1,3 +1,5 @@
+/* esLint-disable */
+
 import React, { Component } from 'react';
 
 
