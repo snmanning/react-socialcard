@@ -60,7 +60,6 @@ class SocialCard extends Component {
 
 //the legacy way or docs way
 // SocialCard.propTypes = {
-//     imageSrc: PropTypes.string.isRequired
-};
+//     imageSrc: PropTypes.string.isRequired};
 
 export default SocialCard;
