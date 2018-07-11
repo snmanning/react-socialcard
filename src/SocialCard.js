@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './SocialCard.css';
+import PropTypes from 'prop-types';
 
 class SocialCard extends Component {
     constructor(props) {
@@ -51,5 +52,9 @@ class SocialCard extends Component {
         );
     }
 }
+
+SocialCard.propTypes = {
+    imageSrc: PropTypes.string.isRequired
+};
 
 export default SocialCard;
