@@ -3,6 +3,11 @@ import './SocialCard.css';
 import PropTypes from 'prop-types';
 
 class SocialCard extends Component {
+    //equivalent to legacy way below
+    //new way
+    static propTypes = {
+        imageSrc: PropTypes.string.isRequired
+    }
     constructor(props) {
         super(props);
         this.state = {
@@ -53,8 +58,9 @@ class SocialCard extends Component {
     }
 }
 
-SocialCard.propTypes = {
-    imageSrc: PropTypes.string.isRequired
+//the legacy way or docs way
+// SocialCard.propTypes = {
+//     imageSrc: PropTypes.string.isRequired
 };
 
 export default SocialCard;
