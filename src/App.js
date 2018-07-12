@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import SocialCard from './SocialCard';
 import './App.css';
 import Header from './header';
+import Footer from './footer';
 
 class App extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class App extends Component {
       <div className='App-container'>
         <Header title='Cat Cuties'/>
         {cards}
+        <Footer />
       </div>
     );
   }
