@@ -1,9 +1,10 @@
 /* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
+import './header.css';
 
 const Header = (props) => 
-        <header>
+        <header className='Header-container'>
             <h1> {props.title} </h1>
         </header>
 
