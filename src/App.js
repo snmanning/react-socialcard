@@ -24,7 +24,7 @@ class App extends Component {
     const cards = this.state.imageUrls.map((url) => <SocialCard imageSrc={url} key= {url} />)
     return (
       <div className='App-container'>
-        <Header/>
+        <Header title='Cat Cuties'/>
         {cards}
       </div>
     );
