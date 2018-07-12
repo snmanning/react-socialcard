@@ -1,15 +1,13 @@
 /* eslint-disable */
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Header extends Component {
-    render () {
-        return (
-            <header>
-                Stuff and Things
-            </header>
-        );
-    }
+const Header = (props) => {
+    return (
+        <header>
+            <h1> Cat Cuties </h1>
+        </header>
+    );
 }
 
 export default Header;
