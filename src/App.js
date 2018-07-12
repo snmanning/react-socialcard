@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import SocialCard from './SocialCard';
 import './App.css';
+import Layout from './layout';
 import Header from './header';
 import Footer from './footer';
 
@@ -24,9 +25,11 @@ class App extends Component {
   render() {
     const cards = this.state.imageUrls.map((url) => <SocialCard imageSrc={url} key= {url} />)
     return (
-      <div className='App-container'>
+      <div>
         <Header title='Cat Cuties'/>
-        {cards}
+        <Layout>
+          {cards}
+        </Layout>  
         <Footer />
       </div>
     );
