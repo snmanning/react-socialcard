@@ -6,7 +6,7 @@ import SocialCardLayout from './SocialCardLayout'
 
 
 const SocialCardList = (props) => {
-    const cards = props.imageUrls.map((url) => <SocialCard imageSrc={url} key={url} />)
+    const cards = props.imageUrls.map((url) => <SocialCard imageSrc={url} key={url} />);
     return (
         <SocialCardLayout>
             {cards}
