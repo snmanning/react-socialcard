@@ -3,9 +3,10 @@
 import React, { Component } from 'react';
 import SocialCard from './SocialCard';
 import './App.css';
-import Layout from './layout';
+import Main from './Main';
 import Header from './header';
 import Footer from './footer';
+import SocialCardList from './SocialCardList';
 
 class App extends Component {
   constructor(props) {
@@ -23,13 +24,12 @@ class App extends Component {
     }
   };
   render() {
-    const cards = this.state.imageUrls.map((url) => <SocialCard imageSrc={url} key= {url} />)
     return (
       <div>
         <Header title='Cat Cuties'/>
-        <Layout>
-          {cards}
-        </Layout>  
+        <Main>
+          <SocialCardList imageUrls={this.state.imageUrls}/>
+        </Main>  
         <Footer />
       </div>
     );
