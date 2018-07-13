@@ -13,11 +13,11 @@ class App extends Component {
     this.state = {
       imageUrls: [
         'https://loremflickr.com/250/250/kitten,black/all',
-        'https://placekitten.com/251/250',
-        'https://placekitten.com/250/251',
-        'https://placekitten.com/250/249',
-        'https://placekitten.com/249/250',
-        'https://placekitten.com/249/249',
+        'https://loremflickr.com/250/250/kitten,orange/all',
+        'https://loremflickr.com/250/250/kittens,white/all',
+        'https://loremflickr.com/250/250/kitten,fluffy/all',
+        'https://loremflickr.com/250/250/kitten,grey/all',
+        'https://loremflickr.com/250/250/cat,calico/all',
 
       ]
     }
