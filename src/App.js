@@ -1,7 +1,6 @@
 /* esLint-disable */
 
 import React, { Component } from 'react';
-import SocialCard from './SocialCard';
 import './App.css';
 import Main from './Main';
 import Header from './header';
