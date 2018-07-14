@@ -1,0 +1,20 @@
+.AddCard-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.AddCard-input {
+    width: 20rem;
+    margin: 0 3rem;
+    border-color: lightskyblue;
+
+}
+
+.AddCard-button {
+    height: 2rem;
+    width: 6rem;
+    margin: 0;
+    border-radius: 15%;
+    background-color: salmon;
+}

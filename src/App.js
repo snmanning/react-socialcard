@@ -6,6 +6,8 @@ import Main from './Main';
 import Header from './header';
 import Footer from './footer';
 import SocialCardList from './SocialCardList';
+import AddCard from './AddCard';
+
 
 class App extends Component {
   constructor(props) {
@@ -22,11 +24,19 @@ class App extends Component {
       ]
     }
   };
+
+updateImageUrls(url) {
+  this.setState({
+    imageUrls: [...this.state.imageUrls, url]
+  });
+}
+
   render() {
     return (
       <div>
         <Header title='Cat Cuties'/>
         <Main>
+          <AddCard onCardAddition={this.updateImageUrls.bind(this)}/>
           <SocialCardList imageUrls={this.state.imageUrls}/>
         </Main>  
         <Footer />
